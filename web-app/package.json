@@ -7,19 +7,14 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "@angular/cli": "~12.2.1",
-    "@angular/compiler-cli": "~12.2.0",
-    "typescript": "~4.3.5",
-    "@angular-devkit/build-angular": "~12.2.1",
-    "postinstall": "ng build --aot --prod"
-  },
-  "engines": {
-    "node": "14.17.5",
-    "npm": "6.14.14"
+    "heroku-postbuild": "ng build --aot --configuration=production"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~12.2.0",
+    "@angular/cli": "~12.2.1",
+    "@angular/compiler-cli": "~12.2.0",
+    "@angular-devkit/build-angular": "~12.2.1",
     "@angular/cdk": "^12.2.2",
     "@angular/common": "~12.2.0",
     "@angular/compiler": "~12.2.0",
@@ -31,7 +26,8 @@
     "@angular/router": "~12.2.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "typescript": "~4.3.5"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.2.1",
@@ -46,5 +42,9 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.3.5"
+  },
+  "engines": {
+    "node": "14.17.5",
+    "npm": "6.14.14"
   }
 }
